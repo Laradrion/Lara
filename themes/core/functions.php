@@ -3,7 +3,6 @@
 * Helpers for the template file.
 */
 $lara->data['header'] = '<h1>Header: Lara</h1>';
-$lara->data['main']   = '<p>Main: Now with a theme engine, Not much more to report for now.</p>';
 $lara->data['footer'] = '<p>Footer: &copy; Lara by Jonas Lindström (jonas@laradrion.com)</p>';
 
 

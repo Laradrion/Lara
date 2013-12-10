@@ -6,6 +6,25 @@
 */
 class CRequest {
 
+ /**
+   * Member variables
+   */
+  public $cleanUrl;
+  public $querystringUrl;
+
+    /**
+     * Constructor
+     *
+     * Default is to generate url's of type index.php/controller/method/arg1/arg2/arg2
+     *
+     * @param boolean $clean generate clean url's of type /controller/method/arg1/arg2/arg2
+     * @param boolean $querystring generate clean url's of type index.php?q=controller/method/arg1/arg2/arg2
+     */
+    public function __construct($urlType=0) {
+        $this->cleanUrl       = $urlType= 1 ? true : false;
+        $this->querystringUrl = $urlType= 2 ? true : false;
+    }
+	
   /**
    * Get the url to the current page. 
    */
