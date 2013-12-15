@@ -185,8 +185,7 @@ class CLara implements ISingleton {
 
         // Check for title or view title
         if (!isset($title)) {
-            $title = extract($this->views->GetData());
-            "Lara - A PHP-based MVC-inspired CMF";
+            $title = "Lara - A PHP-based MVC-inspired CMF";
         }
         $templateFile = (isset($this->config['theme']['template_file'])) ? $this->config['theme']['template_file'] : 'default.tpl.php';
 

@@ -19,7 +19,7 @@ class CCMycontroller extends CObject implements IController {
      */
     public function Index() {
         $content = new CMContent(1);
-        $this->views->SetTitle('Home' . htmlEnt($content['title']));
+        $this->views->SetTitle('Home | ' . htmlEnt($content['title']));
         $this->views->AddInclude('MyController/page.tpl.php', array(
             'content' => $content,
         ));
@@ -30,7 +30,7 @@ class CCMycontroller extends CObject implements IController {
      */
     public function About() {
         $content = new CMContent(2);
-        $this->views->SetTitle('About' . htmlEnt($content['title']));
+        $this->views->SetTitle('About | ' . htmlEnt($content['title']));
         $this->views->AddInclude('MyController/page.tpl.php', array(
             'content' => $content,
         ));
@@ -41,7 +41,7 @@ class CCMycontroller extends CObject implements IController {
      */
     public function Contact() {
         $content = new CMContent(3);
-        $this->views->SetTitle('Contact' . htmlEnt($content['title']));
+        $this->views->SetTitle('Contact | ' . htmlEnt($content['title']));
         $this->views->AddInclude('MyController/page.tpl.php', array(
             'content' => $content,
         ));
